@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:reachify/View/Auth/login/login.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -51,7 +52,7 @@ class AuthScreen extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => AuthScreen(),
+                                  builder: (context) => LoginForm(),
                                 ),
                               );
                             },
