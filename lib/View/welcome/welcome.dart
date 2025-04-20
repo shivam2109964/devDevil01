@@ -63,6 +63,31 @@ class WelcomePage extends StatelessWidget {
               ],
             ),
           ),
+          Positioned(
+            top: MediaQuery.of(context).size.height * 0.75, // Adjust as needed
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.08,
+                width: MediaQuery.of(context).size.width * 0.55,
+                decoration: BoxDecoration(
+                  color: Color(0xFF191D1E),
+                  borderRadius: BorderRadius.all(Radius.circular(18)),
+                ),
+                child: Center(
+                  child: Text(
+                    "Get Started",
+                    style: GoogleFonts.roboto(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
