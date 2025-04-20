@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:reachify/View/Auth/authScreen.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -57,7 +58,7 @@ class WelcomePage extends StatelessWidget {
                   "Optimize. Connect. Grow",
                   style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w500,
-                    fontSize: 18,
+                    fontSize: 15,
                   ),
                 ),
               ],
@@ -68,20 +69,28 @@ class WelcomePage extends StatelessWidget {
             left: 0,
             right: 0,
             child: Center(
-              child: Container(
-                height: MediaQuery.of(context).size.height * 0.08,
-                width: MediaQuery.of(context).size.width * 0.55,
-                decoration: BoxDecoration(
-                  color: Color(0xFF191D1E),
-                  borderRadius: BorderRadius.all(Radius.circular(18)),
-                ),
-                child: Center(
-                  child: Text(
-                    "Get Started",
-                    style: GoogleFonts.roboto(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white,
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AuthScreen()),
+                  );
+                },
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  width: MediaQuery.of(context).size.width * 0.55,
+                  decoration: BoxDecoration(
+                    color: Color(0xFF191D1E),
+                    borderRadius: BorderRadius.all(Radius.circular(18)),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Get Started",
+                      style: GoogleFonts.roboto(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
