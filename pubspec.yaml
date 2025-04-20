@@ -23,3 +23,6 @@ flutter:
     - assets/welcome/recTwo.png
     - assets/welcome/recThree.png
     - assets/welcome/growing.png
+    - assets/auth/signIn.png
+    - assets/auth/authImg.png
+    - assets/auth/logo/deardevil.jpg
