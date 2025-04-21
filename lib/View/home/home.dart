@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:reachify/View/jobFinder/all_jobs_page.dart';
+import 'package:reachify/View/jobFinder/jobFinder.dart';
+import 'package:reachify/View/jobFinder/profile_page.dart';
 import 'package:reachify/view-model/bottomNav/bottom_nav_bloc.dart';
 
 class Home extends StatelessWidget {
@@ -28,11 +31,11 @@ class Home extends StatelessWidget {
       body: BlocBuilder<BottomNavBloc, int>(
         builder: (context, index) {
           if (index == 0) {
-            return Center(child: Text("Index 0"));
+            return JobFinderAppHomepage();
           } else if (index == 1) {
-            return Center(child: Text("Index 1"));
+            return AllJobsPage();
           } else if (index == 2) {
-            return Center(child: Text("Index 2"));
+            return ProfilePage();
           } else {
             return Container();
           }
