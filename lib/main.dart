@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:reachify/View/welcome/welcome.dart';
 import 'package:reachify/firebase_options.dart';
+import 'package:reachify/view-model/auth/login/login_bloc.dart';
 import 'package:reachify/view-model/auth/register/register_bloc.dart';
 
 Future<void> main() async {
@@ -19,7 +20,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => RegisterBloc())],
+      providers: [
+        BlocProvider(create: (context) => RegisterBloc()),
+        BlocProvider(create: (context) => LoginBloc()),
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: WelcomePage(),
