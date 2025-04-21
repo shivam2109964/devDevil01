@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:reachify/View/Auth/login/login.dart';
+import 'package:reachify/View/Auth/register/register.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -60,7 +61,7 @@ class AuthScreen extends StatelessWidget {
                               height: MediaQuery.of(context).size.height * 0.06,
                               width: MediaQuery.of(context).size.width * 0.35,
                               decoration: BoxDecoration(
-                                color: Color(0xFF1E7F1F7),
+                                color: Color(0xff1e7f1f7),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(18),
                                 ),
@@ -83,7 +84,7 @@ class AuthScreen extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => AuthScreen(),
+                                  builder: (context) => RegisterForm(),
                                 ),
                               );
                             },
@@ -102,7 +103,7 @@ class AuthScreen extends StatelessWidget {
                                   style: GoogleFonts.roboto(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,
-                                    color: Color(0xFF1E7F1F7),
+                                    color: Color(0xff1e7f1f7),
                                   ),
                                 ),
                               ),

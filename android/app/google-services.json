@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "127910717948",
+    "project_id": "reachify-97789",
+    "storage_bucket": "reachify-97789.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127910717948:android:8460870ee7ab71f00eaa79",
+        "android_client_info": {
+          "package_name": "com.devdevill.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBucXBDiwMGnxbyfjOF_hE40pwWP9Po2pI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
