@@ -6,6 +6,7 @@ import 'package:reachify/View/welcome/welcome.dart';
 import 'package:reachify/firebase_options.dart';
 import 'package:reachify/view-model/auth/login/login_bloc.dart';
 import 'package:reachify/view-model/auth/register/register_bloc.dart';
+import 'package:reachify/view-model/bottomNav/bottom_nav_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,7 @@ class MainApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => RegisterBloc()),
         BlocProvider(create: (context) => LoginBloc()),
+        BlocProvider(create: (context) => BottomNavBloc()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
