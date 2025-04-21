@@ -49,5 +49,13 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     on<LoginButtonEvent>((event, emit) {
       emit(LoginButtonPressedState());
     });
+    on<LogoutEvent>((event, emit) async {
+      try {
+        await firebaseAuth.signOut();
+        emit(LogoutState());
+      } catch (e) {
+        emit(LoginErrorState("Logout failed: ${e.toString()}"));
+      }
+    });
   }
 }
